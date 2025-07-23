@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.admin.registerlogin">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".UserDetails" />
+        <activity android:name=".Register" />
+        <activity android:name=".Verification" />
+        <activity android:name=".UserMenu" />
+        <activity android:name=".Tlogin" />
+        <activity android:name=".TMenu" />
+        <activity android:name=".Plogin" />
+        <activity android:name=".Pregister" />
+        <activity android:name=".GatekeeperHome" />
+        <activity android:name=".PMenu" />
+        <activity android:name=".Tregister" />
+        <activity android:name=".AddEvent" />
+        <activity android:name=".ViewEvent" />
+        <activity android:name=".AddExam" />
+        <activity android:name=".ViewExam" />
+        <activity android:name=".AddAttendance" />
+        <activity android:name=".ViewAttendance" />
+        <activity android:name=".Parent_Details" />
+        <activity android:name=".StudentAttendance" />
+        <activity android:name=".SendMsg" />
+        <activity android:name=".ViewMsg" />
+        <activity android:name=".PAttendance"></activity>
+    </application>
+
+</manifest>
