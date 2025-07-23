@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    tools:context="com.example.admin.registerlogin.Register">
+
+    <EditText
+        android:id="@+id/editRegName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Name"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPersonName"
+        android:layout_marginTop="50dp" />
+
+    <EditText
+        android:id="@+id/editRegPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_centerHorizontal="true"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/editRegName"
+         />
+
+    <EditText
+        android:id="@+id/editRegEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_centerHorizontal="true"
+        android:hint="Email"
+        android:layout_below="@id/editRegPass"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:id="@+id/editRegAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_centerHorizontal="true"
+        android:hint="Address"
+        android:inputType="text"
+        android:layout_below="@id/editRegMobileNo"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/editRegEnroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_centerHorizontal="true"
+        android:hint="Student Name"
+        android:inputType="text"
+        android:layout_below="@id/editRegAddress"
+        android:layout_marginTop="20dp" />
+
+
+    <EditText
+        android:id="@+id/editRegMobileNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_centerHorizontal="true"
+        android:hint="Mobile Number"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:layout_below="@id/editRegEmail"
+        android:layout_marginTop="20dp" />
+
+    <LinearLayout
+        android:layout_below="@id/editRegEnroll"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnRegRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register" />
+
+        <Button
+            android:id="@+id/btnRegClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
